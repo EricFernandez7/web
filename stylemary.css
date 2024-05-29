@@ -1,0 +1,243 @@
+body, html {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF7E4;
+    color: black;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #FFA200;
+    color: black;
+    padding: 1em;
+    border-bottom: 6px solid black;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'prompt', sans-serif;
+}
+
+@font-face {
+    font-family: 'theboldfont';
+    src: url(theboldfont.ttf);
+}
+
+@font-face {
+    font-family: 'prompt';
+    src: url(Prompt-Regular.ttf);
+}
+
+h1 {
+    margin: 0;
+    font-family: 'theboldfont', sans-serif;
+    font-size: 24px;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'theboldfont', sans-serif;
+    font-size: 36px;
+    margin: 36px 40px 26px 140px;
+    text-align: left;
+}
+
+.link-mary {
+  font-family: 'prompt';
+  color: #FFA200
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    padding: 0 20px;
+    position: relative;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+nav li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: black;
+    transition: width 0.2s;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav li:hover::after {
+    width: 74%;
+}
+
+.index-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.index-gallery a {
+    display: block;
+    margin: 10px;
+}
+
+.about-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0px 240px; /* Ajustar según sea necesario */
+  }
+  
+  .text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; /* Esto alineará el texto a la izquierda */
+    margin-top: 55px; /* Ajustar según sea necesario para el espaciado */
+  }
+  
+  .gallery-item img {
+    max-width: 400px; /* O el tamaño que prefieras */
+    height: auto;
+    border: 4px solid black;
+    margin-right: 32px; /* Añadir un margen derecho para separar imagen y texto */
+    margin-top: 64px;
+    margin-bottom: 24px;
+  }
+  
+  h2 {
+    margin: 0 0 0px 0; /* Ajusta el margen inferior para el espaciado entre el título y el párrafo */
+  }  
+
+  p {
+    font-family: 'prompt', sans-serif;
+    text-align: justify;
+    margin-bottom: 6px;
+  }
+
+  .otros-proyectos-seccion {
+    background-color: #FFF7E4;
+    padding: 20px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 120px;
+    font-family: 'prompt', sans-serif;
+  }
+  
+  .titulo-centrado {
+    text-align: center;
+  }
+  
+  .otros-proyectos-title {
+    font-size: 48px;
+    color: black;
+    margin: 10px 0;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .otros-proyectos-title::before,
+  .otros-proyectos-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 2px;
+    background-color: black;
+  }
+  
+  .otros-proyectos-title::before {
+    left: -60px;
+  }
+  
+  .otros-proyectos-title::after {
+    right: -60px;
+  }
+  
+  .trabajos-gallery {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .trabajos-image-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border: 6px solid black;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .trabajos-image-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+  }
+  
+  .trabajos-image-link:hover {
+    transform: scale(1.1);
+  }
+  
+  .trabajos-image-link:hover img {
+    filter: brightness(0.85) sepia(1) saturate(4) hue-rotate(-15deg);
+  }
+
+.footer-bar {
+    width: 100%;
+    height: 160px;
+    background-color: black;
+    color: #FFA200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    padding-right: 160px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons .instagram-icon img, .social-icons .behance-icon img {
+    width: 32px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.email-text a {
+    color: #FFA200;
+}
+  
+.back-to-top:hover {
+    opacity: 1;
+}
